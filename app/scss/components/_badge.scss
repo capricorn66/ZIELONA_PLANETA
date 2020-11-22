@@ -1,0 +1,38 @@
+/* badge
+*******************************************************************/
+
+.badge {
+  border-radius: .4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: .3rem .8rem;
+  line-height: 1em;
+  &-express {
+    background-color: $app-color-5;
+    color: $white;
+  }
+  &-standard {
+    background-color: $app-color-2;
+    color: $white;
+  }
+  &-fix {
+    background-color: $app-color-7;
+    color: $white;
+  }
+  &-payed {
+    background-color: $white;
+    color: $app-color-2;
+    border: 1px solid $app-color-2;
+  }
+  &-unpayed {
+    background-color: $white;
+    color: $alert-red;
+    border: 1px solid $alert-red;
+  }
+  &-canceled,
+  &-settled {
+    background-color: $white;
+    color: $gray-400;
+    border: 1px solid $gray-400;
+  }
+}

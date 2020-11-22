@@ -1,0 +1,70 @@
+/* accordion
+*******************************************************************/
+
+.accordion {
+  border-bottom: 1px solid $gray-200;
+  margin-bottom: 30px;
+  .btn-primary {
+    span {
+      &:first-child {
+        display: none;
+      }
+      &:last-child {
+        display: inline;
+      }
+    }
+    &.collapsed {
+      span {
+        &:first-child {
+          display: inline;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .accordion-head {
+    padding: 15px 0 20px;
+    border-top: 1px solid $gray-200;
+  }
+
+  .btn-accordion {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 40px 10px 0;
+    border-top: 1px solid $app-color-1;
+    text-align: left;
+    color: $app-color-1;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 7px 10px 7px;
+      border-color: transparent transparent $app-color-1 transparent;
+    }
+    &:focus,
+    &:hover {
+      color: $app-color-1;
+    }
+    &.collapsed {
+      color: $body-color;
+      border-top: 1px solid $gray-200;
+      &::after {
+        border-width: 10px 7px 0 7px;
+        border-color: $body-color transparent transparent transparent;;
+      }
+    }
+  }
+  .accordion-body {
+    padding: 15px 0;
+  }
+}

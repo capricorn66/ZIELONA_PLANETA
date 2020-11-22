@@ -1,0 +1,271 @@
+/* main
+*******************************************************************/
+
+*:focus {
+  box-shadow: none !important;
+}
+
+main {
+  padding: 60px 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, $app-color-1 0%, $app-color-2 100%);
+  color: $white;
+  line-height: 1.6;
+  font-weight: 400;
+
+  h1 {
+    font-size: 36px;
+    @include media-breakpoint-only(xl) {
+      font-size: 32px;
+    }
+    @include media-breakpoint-only(lg) {
+      font-size: 28px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+    }
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 56px;
+    @include media-breakpoint-only(xl) {
+      font-size: 48px;
+    }
+    @include media-breakpoint-only(lg) {
+      font-size: 40px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 40px;
+    }
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 22px;
+    margin-bottom: 1em;
+  }
+  h4 {
+    font-size: 20px;
+    margin-bottom: 1em;
+  }
+  h5 {
+    font-size: 18px;
+    margin-bottom: 1em;
+  }
+  h6 {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+
+  .table {
+    @include media-breakpoint-down(xs) {
+      margin-left: -1rem;
+      margin-right: -1rem;
+      width: calc(100% + 2rem);
+    }
+    th {
+      font-weight: 400;
+    }
+    th,
+    td {
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  ul + h1,
+  ul + h2,
+  ul + h3,
+  ul + h4,
+  ul + h5,
+  ul + h6,
+  p + h1,
+  p + h2,
+  p + h3,
+  p + h4,
+  p + h5,
+  p + h6 {
+    margin-top: 1em;
+  }
+
+  ul:not([class]) {
+    list-style: none;
+    padding-left: 28px;
+    li {
+      margin-bottom: .5rem;
+      &::before {
+        content: "\2022";
+        color: $app-color-1;
+        font-weight: bold;
+        display: inline-block;
+        width: 25px;
+        margin-left: -25px;
+        font-size: 30px;
+        line-height: 0;
+        top: 6px;
+        position: relative;
+      }
+    }
+  }
+
+  label,
+  .col-form-label {
+    font-weight: 400;
+    line-height: 1.2em;
+  }
+
+  .bordered {
+    border: 1px solid $gray-200;
+    padding: 3rem 2rem 0 1rem;
+    border-radius: 1rem;
+    @include media-breakpoint-down(xs) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+  }
+
+  .server-error {
+    text-align: center;
+    padding: 60px 0;
+    .server-error-head {
+      font-size: 160px;
+      @include media-breakpoint-down(xs) {
+        font-size: 120px;
+      }
+      font-weight: 500;
+      position: relative;
+      color: rgba($gray-300,.6);
+      letter-spacing: -.02em;
+      transform: translateX(1%);
+      &::after {
+        content: ".";
+        color: $app-color-1;
+        text-shadow: -4px -4px white, 0 -5px white, -5px 0 white, 5px -5px white, -5px 5px white;
+        @include media-breakpoint-down(xs) {
+          text-shadow: -2px -2px white, 0 -3px white, -3px 0 white, 3px -3px white, -3px 3px white;
+        }
+        display: inline-block;
+        transform: translateX(-70%);
+      }
+    }
+  }
+
+  .offer {
+    .offer-box {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      color: $gray-800;
+
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      margin: 0 20px;
+      padding: 30px 40px 40px;
+      @include media-breakpoint-only(xl) {
+        margin: 0 10px;
+        padding: 30px 30px 40px;
+      }
+      @include media-breakpoint-only(lg) {
+        margin: 0 10px;
+        padding: 30px 30px 40px;
+      }
+      @include media-breakpoint-down(md) {
+        margin: 0;
+        padding: 30px 15px 40px;
+      }
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 130px;
+      }
+      text-align: center;
+      text-decoration: none;
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $white;
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        left: 20%;
+        bottom: -130px;
+        @include media-breakpoint-only(xl) {
+          bottom: -120px;
+        }
+        @include media-breakpoint-only(lg) {
+          bottom: -100px;
+        }
+        @include media-breakpoint-down(md) {
+          bottom: -90px;
+        }
+        background-image: url("../images/offer-stand.png");
+        background-size: 100%;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        z-index: -2;
+      }
+      .offer-name {
+        border-bottom: 1px solid $gray-300;
+        padding-bottom: 10px;
+        h2 {
+          font-size: 28px;
+        }
+      }
+      .offer-price {
+        font-size: 22px;
+        font-weight: 600;
+        border-bottom: 1px solid $gray-300;
+        padding-bottom: 15px;
+        padding-top: 12px;
+        margin-bottom: 40px;
+      }
+      .offer-desc {
+        padding-bottom: 20px;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+
+    }
+
+    .offer-img {
+      margin: -130px -290px -180px 0;
+      @include media-breakpoint-between(sm,md) {
+        margin: -20px -250px -140px 0;
+      }
+      @include media-breakpoint-only(xs) {
+        margin: -20px -250px -120px 0;
+      }
+
+      direction: rtl;
+      position: relative;
+      z-index: 1;
+      img {
+        width: 130%;
+        @include media-breakpoint-between(sm,md) {
+          width: 150%;
+        }
+        @include media-breakpoint-only(xs) {
+          width: 180%;
+        }
+      }
+    }
+
+  }
+
+}

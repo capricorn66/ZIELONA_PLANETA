@@ -1,0 +1,168 @@
+/* buttons
+*******************************************************************/
+
+.btn {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-decoration: none;
+  @include media-breakpoint-up(lg) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  justify-content: center;
+  font-size: 1.6rem;
+  height: 3.4rem;
+
+  &.btn-rounded {
+    border-radius: 1.7rem !important;
+  }
+
+  &.btn-sm {
+    height: 2.8rem;
+    font-size: 1.4rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    @include media-breakpoint-up(lg) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    &.btn-rounded {
+      border-radius: 1.4rem !important;
+    }
+  }
+
+  &.btn-lg {
+    height: 4.2rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    @include media-breakpoint-up(lg) {
+      padding-left: 3.2rem;
+      padding-right: 3.2rem;
+    }
+    &.btn-rounded {
+      border-radius: 2.1rem !important;
+    }
+  }
+
+}
+
+.btn-link {
+  color: $app-color-2;
+  text-decoration: none;
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $app-color-4;
+    box-shadow: none !important;
+    text-decoration: none;
+  }
+}
+
+.btn-white {
+  background-color: $white;
+  border-color: $white;
+  font-size: 16px;
+  color: $app-color-1;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $white;
+    box-shadow: none !important;
+  }
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: $white;
+  border-color: $white;
+  font-size: 16px;
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $app-color-1;
+    box-shadow: none !important;
+    color: white !important;
+  }
+}
+
+
+.btn-primary {
+  background-color: $app-color-2;
+  border-color: $app-color-2;
+  font-size: 16px;
+  color: white !important;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: $app-color-4;
+    border-color: $app-color-4;
+    box-shadow: none !important;
+    color: white !important;
+  }
+}
+
+.btn-outline-primary {
+  border-color: $app-color-2;
+  color: $app-color-2;
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: $app-color-4;
+    border-color: $app-color-4;
+    box-shadow: none !important;
+    color: white !important;
+  }
+}
+
+.btn-bounce-h:hover i {
+  animation: bounce-h 1.4s infinite;
+}
+
+.btn-color-5 {
+  background-color: $app-color-5;
+  border-color: $app-color-5;
+  font-size: 16px;
+  color: white !important;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: $app-color-5;
+    border-color: $app-color-5;
+    box-shadow: none !important;
+    color: white !important;
+  }
+}
+
+.btn-color-7 {
+  background-color: $app-color-7;
+  border-color: $app-color-7;
+  font-size: 16px;
+  color: white !important;
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:hover,
+  &:focus {
+    background-color: $app-color-7;
+    border-color: $app-color-7;
+    box-shadow: none !important;
+    color: white !important;
+  }
+}

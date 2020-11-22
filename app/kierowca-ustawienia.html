@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>WYWOZY SZAMBA - wywozyszamba.pl</title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar align-items-center">
+
+                <a class="brand" href="#">
+                    <img src="./images/logo.svg" alt="WYWOZY SZAMBA" class="d-none d-sm-block">
+                    <img src="./images/logo-sm.svg" alt="WYWOZY SZAMBA" class="d-sm-none">
+                </a>
+
+                <div class="helpdesk mr-30 ml-auto d-none d-lg-flex">
+                    <div class="helpdesk-body">
+                        <div>Infolinia 645 545 434</div>
+                        <small>Czynna pn-pt, w godz. 9.00-15.00</small>
+                    </div>
+                    <i class="icon-helpdesk"></i>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-rounded btn-lg btn-primary px-10 px-md-30 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Jan356@gmail.com
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Panel zarządzania</a>
+                        <a class="dropdown-item" href="#">Ustawienia konta</a>
+                        <a class="dropdown-item" href="#">Wyloguj się</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="nav-scroll nav-tabs-scroll">
+                <div class="nav-scroll-container">
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="orders-tab" href="" role="tab" aria-controls="orders" aria-selected="false">Zlecenia</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="settlements-tab" href="" role="tab" aria-controls="settlements" aria-selected="false">Rozliczenia</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="settings-tab" href="" role="tab" aria-controls="settings" aria-selected="true">Ustawienia</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+
+                    <div class="pane-filters">
+                        <div class="row justify-content-end">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="communeSettingsSelect">gmina:</label>
+                                    <select class="custom-select" id="communeSettingsSelect">
+                                        <option selected>-wszystkie-</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="localitySettingsSelect">miejscowość:</label>
+                                    <select class="custom-select" id="localitySettingsSelect">
+                                        <option selected>-wszystkie-</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pane-body">
+
+                        <h6 class="font-weight-normal">Gmina Żary</h6>
+
+                        <div class="bordered mb-30">
+                            <h4>Sieniawa Żarska</h4>
+
+                            <div class="align-items-center py-5 py-xl-10 d-none d-lg-flex">
+                                <div class="col-lg-3 col-xl-4 col-xxl-5 gray-400 font-14"><i class="icon-septic-truck mr-5 font-40 gray-400 d-xl-none"></i> Szambowóz</div>
+                                <div class="col-lg-9 col-xl-8 col-xxl-7">
+                                    <div class="row">
+                                        <div class="col-lg-3"></div>
+                                        <div class="col-lg-8">
+                                            <div class="row gutter-xs">
+                                                <div class="col-lg-4 text-center">
+                                                    <div class="badge badge-standard">STANDARDS</div>
+                                                </div>
+                                                <div class="col-lg-4 text-center">
+                                                    <div class="badge badge-express">EXPRESS</div>
+                                                </div>
+                                                <div class="col-lg-4 text-center">
+                                                    <div class="badge badge-fix">FIX</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 text-center"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center bg-gray-100 mb-2" id="truck-0-0321">
+                                <div class="col-lg-3 col-xl-4 col-xxl-5 pr-0 py-15 py-xl-10">
+                                    <b class="color-2 mr-10 font-12">1.</b>
+                                    <i class="icon-septic-truck mr-10 font-40 gray-400 d-lg-none d-xl-inline-block"></i>
+                                    <label for="truck-capacity-0-0321" class="no-wrap mb-0 mr-10 color-2 pl-0">min. ilość </label>
+                                    <select class="custom-select w-auto" id="truck-capacity-0-0321">
+                                        <option selected value="10">10 m&sup2;</option>
+                                        <option value="12">12 m&sup2;</option>
+                                        <option value="14">14 m&sup2;</option>
+                                        <option value="16">16 m&sup2;</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-9 col-xl-8 col-xxl-7 py-20 py-xl-10 bg-gray-200-md-down">
+                                    <div class="row align-items-md-end align-items-lg-center">
+                                        <div class="col-md-3 col-lg-3 text-center text-lg-right color-2 mb-20 mb-md-5 mb-lg-0">cena za 1m&sup2;</div>
+                                        <div class="col-md-9 col-lg-8">
+                                            <div class="row gutter-xs">
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-standard" id="standard-0-0321">STANDARDS</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="standard-0-0321">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-express" id="express-0-0321">EXPRESS</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="express-0-0321">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-fix" id="fix-0-0321">FIX</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="fix-0-0321">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 text-right text-lg-center bg-gray-100-md-down py-15 mb-n20 mt-10 mt-md-20 my-lg-0 p-lg-0">
+                                            <button type="button" data-remove-truck="0-0321" class="btn px-0"><span class="gray-500 d-lg-none font-14 mr-10">usuń szambowóz</span> <i class="icon-remove font-26 gray-400"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center bg-gray-100 mb-2" id="truck-0-0323">
+                                <div class="col-lg-3 col-xl-4 col-xxl-5 pr-0 py-15 py-xl-10">
+                                    <b class="color-2 mr-10 font-12">2.</b>
+                                    <i class="icon-septic-truck mr-10 font-40 gray-400 d-lg-none d-xl-inline-block"></i>
+                                    <label for="truck-capacity-0-0323" class="no-wrap mb-0 mr-10 color-2 pl-0">min. ilość </label>
+                                    <select class="custom-select w-auto" id="truck-capacity-0-0323">
+                                        <option selected value="10">10 m&sup2;</option>
+                                        <option value="12">12 m&sup2;</option>
+                                        <option value="14">14 m&sup2;</option>
+                                        <option value="16">16 m&sup2;</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-9 col-xl-8 col-xxl-7 py-20 py-xl-10 bg-gray-200-md-down">
+                                    <div class="row align-items-md-end align-items-lg-center">
+                                        <div class="col-md-3 col-lg-3 text-center text-lg-right color-2 mb-20 mb-md-5 mb-lg-0">cena za 1m&sup2;</div>
+                                        <div class="col-md-9 col-lg-8">
+                                            <div class="row gutter-xs">
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-standard" id="standard-0-0323">STANDARDS</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="standard-0-0323">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-express" id="express-0-0323">EXPRESS</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="express-0-0323">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-fix" id="fix-0-0323">FIX</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="fix-0-0323">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 text-right text-lg-center bg-gray-100-md-down py-15 mb-n20 mt-10 mt-md-20 my-lg-0 p-lg-0">
+                                            <button type="button" data-remove-truck="0-0323" class="btn px-0"><span class="gray-500 d-lg-none font-14 mr-10">usuń szambowóz</span> <i class="icon-remove font-26 gray-400"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none flex-wrap align-items-center bg-gray-100 mb-2" data-new-truck="0-0324">
+                                <div class="col-lg-3 col-xl-4 col-xxl-5 pr-0 py-15 py-xl-10">
+                                    <b class="color-2 mr-10 font-12">2.</b>
+                                    <i class="icon-septic-truck mr-10 font-40 gray-400 d-lg-none d-xl-inline-block"></i>
+                                    <label for="truck-capacity-0-none" class="no-wrap mb-0 mr-10 color-2 pl-0">min. ilość </label>
+                                    <select class="custom-select w-auto" id="truck-capacity-0-none">
+                                        <option selected value="10">10 m&sup2;</option>
+                                        <option value="12">12 m&sup2;</option>
+                                        <option value="14">14 m&sup2;</option>
+                                        <option value="16">16 m&sup2;</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-9 col-xl-8 col-xxl-7 py-20 py-xl-10 bg-gray-200-md-down">
+                                    <div class="row align-items-md-end align-items-lg-center">
+                                        <div class="col-md-3 col-lg-3 text-center text-lg-right color-2 mb-20 mb-md-5 mb-lg-0">cena za 1m&sup2;</div>
+                                        <div class="col-md-9 col-lg-8">
+                                            <div class="row gutter-xs">
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-standard" id="standard-0-none">STANDARDS</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="standard-0-none">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-express" id="express-0-none">EXPRESS</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="express-0-none">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-fix" id="fix-0-none">FIX</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="fix-0-none">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 text-right text-lg-center bg-gray-100-md-down py-15 mb-n20 mt-10 mt-md-20 my-lg-0 p-lg-0">
+                                            <button type="button" data-remove-truck="0-none" class="btn px-0"><span class="gray-500 d-lg-none font-14 mr-10">usuń szambowóz</span> <i class="icon-remove font-26 gray-400"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center py-10 mb-30">
+                                <div class="col-lg-3 col-xl-4 col-xxl-5"></div>
+                                <div class="col-12 col-lg-9 col-xl-8 col-xxl-7 text-lg-right py-20 py-lg-0 px-2 px-lg-15">
+                                    <button type="button" data-add-truck="0-0324" class="btn px-0">
+                                        <span class="gray-500 font-14 mr-10">Dodaj kolejny szambowóz</span> <i class="icon-add font-26 color-2 mr-lg-n2 mr-xl-0 mr-xxl-1"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+
+
+                            <h4>Złotnik</h4>
+
+                            <div class="align-items-center py-5 py-xl-10 d-none d-lg-flex">
+                                <div class="col-lg-3 col-xl-4 col-xxl-5 gray-400 font-14"><i class="icon-septic-truck mr-5 font-40 gray-400 d-xl-none"></i> Szambowóz</div>
+                                <div class="col-lg-9 col-xl-8 col-xxl-7">
+                                    <div class="row">
+                                        <div class="col-lg-3"></div>
+                                        <div class="col-lg-8">
+                                            <div class="row gutter-xs">
+                                                <div class="col-lg-4 text-center">
+                                                    <div class="badge badge-standard">STANDARDS</div>
+                                                </div>
+                                                <div class="col-lg-4 text-center">
+                                                    <div class="badge badge-express">EXPRESS</div>
+                                                </div>
+                                                <div class="col-lg-4 text-center">
+                                                    <div class="badge badge-fix">FIX</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 text-center"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center bg-gray-100 mb-2" id="truck-1-0322">
+                                <div class="col-lg-3 col-xl-4 col-xxl-5 pr-0 py-15 py-xl-10">
+                                    <b class="color-2 mr-10 font-12">1.</b>
+                                    <i class="icon-septic-truck mr-10 font-40 gray-400 d-lg-none d-xl-inline-block"></i>
+                                    <label for="truck-capacity-1-0322" class="no-wrap mb-0 mr-10 color-2 pl-0">min. ilość </label>
+                                    <select class="custom-select w-auto" id="truck-capacity-1-0322">
+                                        <option selected value="10">10 m&sup2;</option>
+                                        <option value="12">12 m&sup2;</option>
+                                        <option value="14">14 m&sup2;</option>
+                                        <option value="16">16 m&sup2;</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-9 col-xl-8 col-xxl-7 py-20 py-xl-10 bg-gray-200-md-down">
+                                    <div class="row align-items-md-end align-items-lg-center">
+                                        <div class="col-md-3 col-lg-3 text-center text-lg-right color-2 mb-20 mb-md-5 mb-lg-0">cena za 1m&sup2;</div>
+                                        <div class="col-md-9 col-lg-8">
+                                            <div class="row gutter-xs">
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-standard" id="standard-1-0322">STANDARDS</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="standard-1-0322">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-express" id="express-1-0322">EXPRESS</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="express-1-0322">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-fix" id="fix-1-0322">FIX</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="fix-1-0322">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 text-right text-lg-center bg-gray-100-md-down py-15 mb-n20 mt-10 mt-md-20 my-lg-0 p-lg-0">
+                                            <button type="button" data-remove-truck="1-0322" class="btn px-0"><span class="gray-500 d-lg-none font-14 mr-10">usuń szambowóz</span> <i class="icon-remove font-26 gray-400"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none flex-wrap align-items-center bg-gray-100 mb-2" data-new-truck="1-0325">
+                                <div class="col-lg-3 col-xl-4 col-xxl-5 pr-0 py-15 py-xl-10">
+                                    <b class="color-2 mr-10 font-12">1.</b>
+                                    <i class="icon-septic-truck mr-10 font-40 gray-400 d-lg-none d-xl-inline-block"></i>
+                                    <label for="truck-capacity-1-none" class="no-wrap mb-0 mr-10 color-2 pl-0">min. ilość </label>
+                                    <select class="custom-select w-auto" id="truck-capacity-1-none">
+                                        <option selected value="10">10 m&sup2;</option>
+                                        <option value="12">12 m&sup2;</option>
+                                        <option value="14">14 m&sup2;</option>
+                                        <option value="16">16 m&sup2;</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-9 col-xl-8 col-xxl-7 py-20 py-xl-10 bg-gray-200-md-down">
+                                    <div class="row align-items-md-end align-items-lg-center">
+                                        <div class="col-md-3 col-lg-3 text-center text-lg-right color-2 mb-20 mb-md-5 mb-lg-0">cena za 1m&sup2;</div>
+                                        <div class="col-md-9 col-lg-8">
+                                            <div class="row gutter-xs">
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-standard" id="standard-1-none">STANDARDS</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="standard-1-none">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-express" id="express-1-none">EXPRESS</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="express-1-none">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 text-center d-flex flex-md-column align-items-center justify-content-center mb-15 mb-md-0">
+                                                    <div class="d-lg-none mb-md-15 col-6 pl-0 pl-md-15 col-md text-right text-md-center">
+                                                        <div class="badge badge-fix" id="fix-1-none">FIX</div>
+                                                    </div>
+                                                    <div class="input-group col-6 px-0 justify-content-md-center flex-nowrap w-auto">
+                                                        <input type="text" class="form-control text-center flex-shrink-0 flex-grow-0 w-auto" placeholder="00,00" size="4" aria-label="cena za 1m&sup2;" aria-describedby="fix-1-none">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text">PLN</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 text-right text-lg-center bg-gray-100-md-down py-15 mb-n20 mt-10 mt-md-20 my-lg-0 p-lg-0">
+                                            <button type="button" data-remove-truck="1-none" class="btn px-0"><span class="gray-500 d-lg-none font-14 mr-10">usuń szambowóz</span> <i class="icon-remove font-26 gray-400"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap align-items-center py-10 mb-30">
+                                <div class="col-lg-3 col-xl-4 col-xxl-5"></div>
+                                <div class="col-12 col-lg-9 col-xl-8 col-xxl-7 text-lg-right py-20 py-lg-0 px-2 px-lg-15">
+                                    <button type="button" data-add-truck="1-0325" class="btn px-0">
+                                        <span class="gray-500 font-14 mr-10">Dodaj kolejny szambowóz</span> <i class="icon-add font-26 color-2 mr-lg-n2 mr-xl-0 mr-xxl-1"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-dark btn-sm btn-rounded mb-40" data-toggle="modal" data-target="#partnerNewTownModal">Dodaj miejscowość <i class="icon-plus ml-10 mr-n5 mt-n1 font-12"></i></button>
+
+                        </div>
+
+                        <div class="row justify-content-center py-40">
+                            <div class="col-lg-9 col-xl-7 text-center">
+                                <p class="mb-30 gray-700">Nunc sapien nunc, tempor sit amet vehicula at, tristique vitae augue. Proin auctor, elit non consectetur ornare, enim odio bibendum arcu, ut rutrum leo velit non odio.</p>
+                                <button type="button" class="btn btn-lg btn-primary btn-rounded ml-20" data-toggle="modal" data-target="#partnerNewCommuneModal">Dodaj kolejną gminę <i class="icon-plus ml-10 mr-n5 mt-n1 font-12"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 mb-40 mb-xl-0">
+                    <a class="brand" href="#">
+                        <img src="./images/logo-white.svg" alt="WYWOZY SZAMBA">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-xl-3 mb-40 mb-lg-0">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Współpraca</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Polityka prywatności</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Regulamin</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Administrator danych osobowych</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-40 mb-md-0">
+                    <h5>Kontakt</h5>
+                    <h6>Zielona Planeta Sp. z o.o. Sp. K.</h6>
+                    <p class="mb-30">ul. Kożuchowska 20 D, 65-364 Zielona Góra</p>
+                    <a href="mailto:bok@papaszambo.pl">E-mail: bok@papaszambo.pl</a>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <h5>Infolinia</h5>
+                    <h6>Czynna pn-pt, w godz. 9.00-15.00</h6>
+                    <div class="phone">645 545 434</div>
+                    <p class="text-muted">Opłaty za połączenia są zgodne z cennikiem oferty, z której korzystasz</p>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
+                &copy; 2020 Zielona Planeta
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="partnerNewTownModal" tabindex="-1" aria-labelledby="partnerNewTownModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="partnerNewTownModalLabel">Nowa miejscowość</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="newTownInput">Wyszukaj miejscowość w <b>gminie Żary</b></label>
+                        <input type="email" class="form-control" id="newTownInput">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-rounded">Dodaj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="partnerNewCommuneModal" tabindex="-1" aria-labelledby="partnerNewCommuneModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="partnerNewCommuneModalLabel">Nowa gmina</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="newCommuneInput">Wyszukaj gminę</label>
+                        <input type="email" class="form-control" id="newCommuneInput">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-rounded">Dodaj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bs4-xs d-block d-sm-none"></div>
+    <div class="bs4-sm d-none d-sm-block d-md-none"></div>
+    <div class="bs4-md d-none d-md-block d-lg-none"></div>
+    <div class="bs4-lg d-none d-lg-block d-xl-none"></div>
+    <div class="bs4-xl d-none d-xl-block d-xxl-none"></div>
+    <div class="bs4-xxl d-none d-xxl-block"></div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* pagination
+*******************************************************************/
+
+.pagination {
+  margin-bottom: 30px;
+  .page-item {
+
+    &.disabled {
+      .page-link {
+        opacity: .5;
+        color: $gray-400;
+        border-color: $gray-400;
+      }
+    }
+    &.active {
+      .page-link,
+      .page-link:hover,
+      .page-link:focus {
+        background-color: $app-color-1;
+        border-color: $app-color-1;
+        color: $white;
+      }
+    }
+    .page-link {
+      color: $app-color-1;
+      border-radius: 4px;
+      border-color: $app-color-1;
+      height: 38px;
+      min-width: 38px;
+      text-align: center;
+      margin: 0 4px;
+      &:hover,
+      &:focus {
+        background-color: $app-color-1;
+        color: $white;
+      }
+      i {
+        font-size: 12px;
+        margin: -3px 0 0;
+      }
+    }
+
+  }
+}

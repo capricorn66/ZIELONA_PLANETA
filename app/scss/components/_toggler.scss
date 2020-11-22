@@ -1,0 +1,25 @@
+/* toggler
+*******************************************************************/
+
+.navbar-toggler {
+    .navbar-toggler-icon {
+        width: 18px;
+        height: 3px;
+        background: $app-color-1;
+        border-radius: 2px;
+        &::after,
+        &::before {
+            content: "";
+            width: 18px;
+            height: 3px;
+            background: $app-color-1;
+            border-radius: 2px;
+            display: block;
+            margin: 2px 0;
+        }
+        &::before {
+            top: -9px;
+            position: relative;
+        }
+    }
+}

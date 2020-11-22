@@ -1,0 +1,115 @@
+// Default colors
+
+$white: #FFF;
+$black: #000;
+$lightblack: #121212;
+$gray-100: #f4f4f4;
+$gray-200: #eaeaea;
+$gray-300: #CCC;
+$gray-400: #a7a9ac;
+$gray-500: #888;
+$gray-600: #717171;
+$gray-700: #585858;
+$gray-800: #474747;
+$gray-900: #343434;
+
+$body-color: #222222;
+
+$alert-red: #ff4200;
+$alert-green: #559f4f;
+$alert-yellow: #ffd300;
+$alert-blue: #0b7bb9;
+
+
+//primary colors
+
+$app-color-1: #5ecb56;
+$app-color-2: #008026;
+$app-color-3: #104D21;
+$app-color-4: #153312;
+$app-color-5: #003CE1;
+$app-color-6: #C8E200;
+$app-color-7: #C19E13;
+
+$primary: $app-color-2;
+
+$service-colors: () !default;
+$service-colors: map-merge(
+    (
+        "color-1": $app-color-1,
+        "color-2": $app-color-2,
+        "color-3": $app-color-3,
+        "color-4": $app-color-4,
+        "color-5": $app-color-5,
+        "color-6": $app-color-6,
+        "color-7": $app-color-7
+    ),
+    $service-colors
+);
+
+// icons
+
+$font-size-base: 1.6rem;
+
+$icon-arrow-left-white: url("../images/arrow-left.svg") !default;
+$icon-arrow-right-white: url("../images/arrow-right.svg") !default;
+
+
+// Navs
+
+$nav-padding-x: 1.5rem !default;
+
+
+// Modal
+$modal-fade-transform: scale(.9);
+
+// Forms focus
+$input-focus-border-color: $app-color-2;
+
+$input-group-addon-bg: rgba($gray-300,.4);
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 5px !default;
+$spacers: () !default;
+$spacers: map-merge(
+    (
+        0: 0,
+        1: 1px,
+        2: 2px,
+        3: 3px,
+        4: 4px,
+        5: $spacer,
+        10: ($spacer * 2),
+        15: ($spacer * 3),
+        20: ($spacer * 4),
+        25: ($spacer * 5),
+        30: ($spacer * 6),
+        35: ($spacer * 7),
+        40: ($spacer * 8),
+        45: ($spacer * 9),
+        50: ($spacer * 10),
+        55: ($spacer * 11),
+        60: ($spacer * 12),
+        65: ($spacer * 13),
+        70: ($spacer * 14),
+        75: ($spacer * 15),
+        80: ($spacer * 16),
+        85: ($spacer * 17),
+        90: ($spacer * 18),
+        95: ($spacer * 19),
+        100: ($spacer * 20),
+    ),
+    $spacers
+);
+
+$custom-control-indicator-border-color: $gray-300;
+$input-border-color: $gray-300;
+$border-radius: .5rem;
+$border-radius-lg: .6rem;
+$border-radius-sm: .4rem;
+

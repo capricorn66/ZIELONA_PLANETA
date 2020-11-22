@@ -1,0 +1,142 @@
+.nav-scroll {
+
+	position: relative;
+	overflow: hidden;
+	@include media-breakpoint-down(xs) {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	&.nav-tabs-scroll {
+
+		.nav-tabs {
+			-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+			.nav-item {
+				white-space: nowrap;
+			}
+		}
+	}
+
+	&.nav-scroll-init {
+		.nav-scroll-container {
+			.nav {
+				opacity: 1;
+			}
+		}
+	}
+
+	.nav-scroll-container {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		-webkit-overflow-scrolling: touch;
+		margin-bottom: -20px;
+		padding-bottom: 20px;
+		display: -ms-flexbox;
+		display: flex;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		.nav {
+			opacity: 0;
+			@include transition(opacity .1s ease);
+			-ms-flex: 1 0 auto;
+			flex: 1 0 auto;
+			margin: 0;
+
+			.nav-item {
+				display: block;
+				@include media-breakpoint-down(xs) {
+					&:first-child {
+						margin-left: 15px;
+					}
+					&:last-child {
+						margin-right: 15px;
+					}
+				}
+
+				button,
+				a {
+					text-decoration: none;
+				}
+			}
+
+			.btn-rounded i {
+				top: -2px;
+			}
+		}
+	}
+
+	.nav-scroll-btn-right,
+	.nav-scroll-btn-left,
+	&[data-overflowing='left'] .nav-scroll-btn-right,
+	&[data-overflowing='none'] .nav-scroll-btn-right,
+	&[data-overflowing='right'] .nav-scroll-btn-left,
+	&[data-overflowing='none'] .nav-scroll-btn-left {
+		display: none;
+	}
+
+	&[data-overflowing='right'] .nav-scroll-btn-right,
+	&[data-overflowing='both'] .nav-scroll-btn-right,
+	&[data-overflowing='left'] .nav-scroll-btn-left,
+	&[data-overflowing='both'] .nav-scroll-btn-left {
+		display: block;
+	}
+
+
+	.nav-scroll-btn {
+		top: 50%;
+		margin-top: -30px;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background: rgba($app-color-1,.6);
+		border: 2px solid $white;
+		outline: 0;
+		padding: 0;
+		position: absolute;
+		cursor: pointer;
+		z-index: 1;
+
+		&::after {
+			content: "";
+			width: 10px;
+			height: 16px;
+			display: inline-block;
+			vertical-align: middle;
+			background-repeat: no-repeat;
+			background-size: 40px;
+			margin-top: -5px;
+		}
+
+		&:hover::after {
+			opacity: 1;
+		}
+
+		&.nav-scroll-btn-left {
+			left: -30px;
+			text-align: right;
+			padding-right: 10px;
+			&::after {
+				background-image: $icon-arrow-left-white;
+				margin-left: 10px;
+				margin-right: 3px;
+			}
+		}
+
+		&.nav-scroll-btn-right {
+			right: -30px;
+			text-align: left;
+			padding-left: 10px;
+			&::after {
+				background-image: $icon-arrow-right-white;
+				margin-right: 10px;
+				margin-left: 3px;
+			}
+		}
+	}
+
+}

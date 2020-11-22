@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+@import "utilities/variables";
+
+// Bootstrap v4.3.1 (https://getbootstrap.com/)
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 567px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px
+);
+
+// bootstrap
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+@import "~bootstrap/scss/popover";
+
+// bootstrap-datepicker
+@import "~bootstrap-datepicker/dist/css/bootstrap-datepicker3.css";
+
+@import "utilities/mixins";
+@import "utilities/helpers";
+
+@import "components/reboot";
+@import "components/dropdown";
+@import "components/badge";
+@import "components/header";
+@import "components/footer";
+@import "components/card";
+@import "components/home";
+@import "components/buttons";
+@import "components/icons";
+@import "components/tabs";
+@import "components/animations";
+@import "components/breadcrumb";
+@import "components/main";
+@import "components/toggler";
+@import "components/table";
+@import "components/forms";
+@import "components/custom-forms";
+@import "components/popover";
+@import "components/type";
+@import "components/accordion";
+@import "components/nav";
+@import "components/nav-scroll";
+@import "components/back-to-top";
+@import "components/cookies";
+@import "components/pagination";
+@import "components/products";
+@import "components/modal";
+@import "components/text";

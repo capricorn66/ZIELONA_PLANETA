@@ -1,0 +1,30 @@
+/* back to top
+*******************************************************************/
+
+#back-to-top {
+  background-color: $app-color-1;
+  box-shadow: none;
+  text-align: center;
+  line-height: 50px;
+  &::after {
+    content: "\e90e";
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    color: $white;
+    font-size: 34px;
+  }
+}

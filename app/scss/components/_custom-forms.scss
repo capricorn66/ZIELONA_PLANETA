@@ -1,0 +1,91 @@
+/* custom forms
+*******************************************************************/
+
+.custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 3.4rem;
+  padding: 0.3rem 3rem 0.3rem 1rem;
+  border-radius: .8rem;
+  font-size: inherit;
+}
+
+.custom-checkbox-in-table {
+  padding-left: 0 !important;
+  .custom-control-input {
+    height: 100%;
+    width: 100%;
+    &:checked ~ .custom-control-label::before {
+      border-color: $app-color-2;
+      background-color: $app-color-2;
+    }
+    &:not(:disabled):active ~ .custom-control-label::before {
+      border-color: rgba($app-color-2,.2);
+      background-color: rgba($app-color-2,.2);
+    }
+    &:disabled:checked ~ .custom-control-label::before {
+      border-color: rgba($app-color-2,0);
+      background-color: rgba($app-color-2,.5);
+    }
+  }
+
+  .custom-control-label {
+    height: 2.4rem;
+    width: 2.4rem;
+    padding-left: 0;
+    &::before {
+      border-radius: 50%;
+    }
+    &::before,
+    &:after {
+      top: 0.15rem;
+      left: 0;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}
+
+.custom-file-label {
+  border-radius: 0;
+  padding-right: 160px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  @include media-breakpoint-down(xs) {
+    padding-right: 120px;
+  }
+  &::after {
+    background-color: $gray-600;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0;
+    @include media-breakpoint-down(xs) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.custom-control {
+  min-height: 2.4rem;
+  padding-left: 3rem;
+  &-label {
+    padding-left: 0;
+    &::before {
+      top: .2rem;
+      left: -3rem;
+      width: 2rem;
+      height: 2rem;
+    }
+    &::after {
+      top: 0.2rem;
+      left: -3rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

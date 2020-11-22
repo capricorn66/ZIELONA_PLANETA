@@ -1,0 +1,32 @@
+/* reboot
+*******************************************************************/
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: $body-color;
+}
+
+a {
+  color: $app-color-2;
+  text-decoration: underline;
+  &:focus,
+  &:hover {
+    color: darken($app-color-2, 10%)
+  }
+}
+
+hr {
+  border-top-color: $gray-300;
+}
+
+label {
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  margin-bottom: .8rem;
+}

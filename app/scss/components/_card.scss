@@ -1,0 +1,40 @@
+/* card
+*******************************************************************/
+
+.card {
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 12px 0 rgba($gray-300,.4), 0 6px 10px 0 rgba($gray-300,.4);
+  &[href]:hover,
+  &[href]:focus {
+    box-shadow: 0 0 12px 0 rgba($gray-300,.8), 0 8px 10px 0 rgba($gray-300,.8);
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    text-decoration: none;
+  }
+
+  .card-img-top {
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  .card-body {
+    padding-bottom: 1.5rem;
+    .date {
+      font-size: 12px;
+      color: $gray-600;
+    }
+    .card-title {
+      margin-bottom: 1em;
+    }
+    .card-title + .date {
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+    .card-title + .date + p {
+      margin-bottom: 20px;
+      color: $gray-900;
+    }
+  }
+}

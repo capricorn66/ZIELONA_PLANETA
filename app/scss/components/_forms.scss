@@ -1,0 +1,68 @@
+/* forms
+*******************************************************************/
+
+.form-control {
+  height: 3.4rem;
+  padding: 0.3rem 1rem;
+  font-size: 1.6rem;
+  &:disabled,
+  &[readonly] {
+    background: $gray-200;
+  }
+  &.form-control-rounded {
+    border-radius: 1.7rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  &.form-control-lg {
+    height: 4.2rem;
+    &.form-control-rounded {
+      border-radius: 2.1rem;
+      padding-left: 1.8rem;
+      padding-right: 1.8rem;
+    }
+  }
+}
+
+.input-group-lg > .input-group-append > .btn {
+  height: auto;
+  font-size: 1.6rem;
+  &.btn-rounded {
+    border-radius: 2.1rem !important;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.input-group-lg > .form-control {
+  &.form-control-rounded {
+    padding-left: 1.8rem;
+    padding-right: 2.8rem;
+  }
+}
+.input-group-lg > .form-control:not(textarea),
+.input-group-lg > .custom-select {
+  height: 4.2rem;
+  font-size: 1.6rem;
+}
+
+
+.input-group-text {
+  color: $gray-900;
+  a[data-toggle="popover"] {
+    cursor: pointer;
+    color: $gray-900;
+    &:hover {
+      text-decoration: none;
+      color: $gray-900;
+    }
+  }
+}
+
+.form-group {
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+textarea.form-control {
+  min-height: 92px;
+}

@@ -1,0 +1,22 @@
+/* breadcrumb
+*******************************************************************/
+
+.breadcrumb {
+  background: none;
+  font-size: 14px;
+  padding: 0.5rem 0;
+  margin-bottom: 30px;
+  .breadcrumb-item {
+    &::before {
+      color: $gray-400;
+      font-weight: 300;
+    }
+    &.active {
+      font-weight: 500;
+      color: $app-color-1;
+    }
+    a {
+      color: $gray-400;
+    }
+  }
+}

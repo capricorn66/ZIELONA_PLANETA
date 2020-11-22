@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>WYWOZY SZAMBA - wywozyszamba.pl</title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar align-items-center">
+
+                <a class="brand" href="#">
+                    <img src="./images/logo.svg" alt="WYWOZY SZAMBA" class="d-none d-sm-block">
+                    <img src="./images/logo-sm.svg" alt="WYWOZY SZAMBA" class="d-sm-none">
+                </a>
+
+                <div class="helpdesk mr-30 ml-auto d-none d-lg-flex">
+                    <div class="helpdesk-body">
+                        <div>Infolinia 645 545 434</div>
+                        <small>Czynna pn-pt, w godz. 9.00-15.00</small>
+                    </div>
+                    <i class="icon-helpdesk"></i>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-rounded btn-lg btn-primary px-10 px-md-30 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Jan356@gmail.com
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Panel zarządzania</a>
+                        <a class="dropdown-item" href="#">Ustawienia konta</a>
+                        <a class="dropdown-item" href="#">Wyloguj się</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="nav-scroll nav-tabs-scroll">
+                <div class="nav-scroll-container">
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="orders-tab" href="" role="tab" aria-controls="orders" aria-selected="true">Zlecenia</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="complaints-tab" href="" role="tab" aria-controls="complaints" aria-selected="false">Reklamacje</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+
+                    <div class="pane-filters">
+                        <div class="row justify-content-end">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="paymentsStatusSelect">status płatności:</label>
+                                    <select class="custom-select" id="paymentsStatusSelect">
+                                        <option selected>-wszystkie-</option>
+                                        <option value="1">OPŁACONE</option>
+                                        <option value="2">NIEOPŁACONE</option>
+                                        <option value="3">ROZLICZONE</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                                <div class="form-group">
+                                    <label>zakres dat:</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control js-date-form-control pr-10" name="start">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">do</span>
+                                        </div>
+                                        <input type="text" class="form-control js-date-form-control pr-10" name="end">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pane-body">
+
+                        <h4 class="mb-5">Adres:</h4>
+                        <p class="mb-20">65-001 Zielona Góra, ul. Sezamkowa 4/20</p>
+
+                        <table id="table-1" class="table mb-40">
+                            <tr data-head>
+                                <th>id</th>
+                                <th class="d-none d-xl-table-cell">dodano</th>
+                                <th>płatność</th>
+                                <th class="d-none d-md-table-cell">termin</th>
+                                <th class="d-none d-sm-table-cell text-center">status</th>
+                                <th class="text-center d-none d-lg-table-cell">faktura VAT</th>
+                                <th class="text-center d-none d-xl-table-cell">uwagi</th>
+                                <th></th>
+                            </tr>
+                            <tr id="00034">
+                                <td>00034 <div class="badge badge-express ml-3">E</div></td>
+                                <td data-added class="d-none d-xl-table-cell">12.09<span class="date-year">.2020</span></td>
+                                <td data-payment><div class="badge badge-payed">OPŁACONE</div></td>
+                                <td data-time-limit class="d-none d-md-table-cell">
+                                    <b>22-23</b>
+                                    <span class="gray-600 font-weight-light">.09<span class="date-year">.2020</span></span>
+                                    <a href="" class="font-12 noUnderline">(zmień)</a>
+                                </td>
+                                <td data-status class="text-center d-none d-sm-table-cell"><i class="icon-pending color-5 font-24"></i></td>
+                                <td data-bill class="text-center d-none d-lg-table-cell">-</td>
+                                <td data-comments class="text-center d-none d-xl-table-cell">
+                                    <a role="button" href="" class="font-14" data-toggle="modal" data-target="#clientOrdersModal">dodaj</a>
+                                </td>
+                                <td data-action class="d-xl-none text-center">
+                                    <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10" data-toggle="modal" data-target="#clientOrdersModal"><i class="icon-chevron-right"></i></button>
+                                </td>
+                            </tr>
+                            <tr id="00035">
+                                <td>00035 <div class="badge badge-standard ml-3">S</div></td>
+                                <td data-added class="d-none d-xl-table-cell">12.08<span class="date-year">.2020</span></td>
+                                <td data-payment><div class="badge badge-unpayed">NIEOPŁACONE</div></td>
+                                <td data-time-limit class="d-none d-md-table-cell">
+                                    <b>22-25</b>
+                                    <span class="gray-600 font-weight-light">.08<span class="date-year">.2020</span></span>
+                                    <a href="" class="font-12 noUnderline">(zmień)</a>
+                                </td>
+                                <td data-status class="text-center d-none d-sm-table-cell"><a href="" class="btn btn-sm btn-primary btn-rounded">OPŁAĆ</a></td>
+                                <td data-bill class="text-center d-none d-lg-table-cell">-</td>
+                                <td data-comments class="text-center d-none d-xl-table-cell">-</td>
+                                <td data-action class="d-xl-none text-center">
+                                    <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10" data-toggle="modal" data-target="#clientOrdersModal"><i class="icon-chevron-right"></i></button>
+                                </td>
+                            </tr>
+                            <tr id="00036">
+                                <td>00036 <div class="badge badge-fix ml-3">F</div></td>
+                                <td data-added class="d-none d-xl-table-cell">22.07<span class="date-year">.2020</span></td>
+                                <td data-payment><div class="badge badge-payed">OPŁACONE</div></td>
+                                <td data-time-limit class="d-none d-md-table-cell">
+                                    <b>22-23</b>
+                                    <span class="gray-600 font-weight-light">.07<span class="date-year">.2020</span></span>
+                                    <a href="" class="font-12 noUnderline">(zmień)</a>
+                                </td>
+                                <td data-status class="text-center d-none d-sm-table-cell font-14"><a href="">reklamacja</a></td>
+                                <td data-bill class="text-center d-none d-lg-table-cell">-</td>
+                                <td data-comments class="text-center d-none d-xl-table-cell">
+                                    <a role="button" href="" class="font-14" data-toggle="modal" data-target="#clientOrdersModal">dodaj</a>
+                                </td>
+                                <td data-action class="d-xl-none text-center">
+                                    <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10" data-toggle="modal" data-target="#clientOrdersModal"><i class="icon-chevron-right"></i></button>
+                                </td>
+                            </tr>
+                            <tr id="00037">
+                                <td>00037 <div class="badge badge-standard ml-3">S</div></td>
+                                <td data-added class="d-none d-xl-table-cell">12.06<span class="date-year">.2020</span></td>
+                                <td data-payment><div class="badge badge-settled">ROZLICZONE</div></td>
+                                <td data-time-limit class="d-none d-md-table-cell">
+                                    <b>22-24</b>
+                                    <span class="gray-600 font-weight-light">.06<span class="date-year">.2020</span></span>
+                                    <a href="" class="font-12 noUnderline">(zmień)</a>
+                                </td>
+                                <td data-status class="text-center d-none d-sm-table-cell font-14">zrealizowane</td>
+                                <td data-bill class="text-center d-none d-lg-table-cell">
+                                    <a href="" class="font-12"><img src="./images/pdf.svg" width="28" alt="FV43543" class="mr-5 my-n3">FV43543.pdf</a>
+                                </td>
+                                <td data-comments class="text-center d-none d-xl-table-cell">
+                                    <a role="button" href="" class="font-14" data-toggle="modal" data-target="#clientOrdersModal">dodaj</a>
+                                </td>
+                                <td data-action class="d-xl-none text-center">
+                                    <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10" data-toggle="modal" data-target="#clientOrdersModal"><i class="icon-chevron-right"></i></button>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 mb-40 mb-xl-0">
+                    <a class="brand" href="#">
+                        <img src="./images/logo-white.svg" alt="WYWOZY SZAMBA">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-xl-3 mb-40 mb-lg-0">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Współpraca</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Polityka prywatności</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Regulamin</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Administrator danych osobowych</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-40 mb-md-0">
+                    <h5>Kontakt</h5>
+                    <h6>Zielona Planeta Sp. z o.o. Sp. K.</h6>
+                    <p class="mb-30">ul. Kożuchowska 20 D, 65-364 Zielona Góra</p>
+                    <a href="mailto:bok@papaszambo.pl">E-mail: bok@papaszambo.pl</a>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <h5>Infolinia</h5>
+                    <h6>Czynna pn-pt, w godz. 9.00-15.00</h6>
+                    <div class="phone">645 545 434</div>
+                    <p class="text-muted">Opłaty za połączenia są zgodne z cennikiem oferty, z której korzystasz</p>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
+                &copy; 2020 Zielona Planeta
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="clientOrdersModal" tabindex="-1" aria-labelledby="clientOrdersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="clientOrdersModalLabel">zlecenia <span data-title-id></span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table" data-order id="">
+                        <tr>
+                            <th class="text-right pt-15">dodano</th>
+                            <td data-added></td>
+                        </tr>
+                        <tr>
+                            <th class="text-right pt-15">płatność</th>
+                            <td data-payment></td>
+                        </tr>
+                        <tr>
+                            <th class="text-right pt-15">termin</th>
+                            <td data-time-limit></td>
+                        </tr>
+                        <tr>
+                            <th class="text-right pt-15">status</th>
+                            <td data-status></td>
+                        </tr>
+                        <tr>
+                            <th class="text-right no-wrap pt-15">faktura VAT</th>
+                            <td data-bill></td>
+                        </tr>
+                        <tr>
+                            <th class="text-right no-wrap pt-15"><label for="orderComments">uwagi do zlecenia</label></th>
+                            <td>
+                                <div class="form-group mb-30">
+                                    <textarea class="form-control" id="orderComments" rows="5"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-rounded">Dodaj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bs4-xs d-block d-sm-none"></div>
+    <div class="bs4-sm d-none d-sm-block d-md-none"></div>
+    <div class="bs4-md d-none d-md-block d-lg-none"></div>
+    <div class="bs4-lg d-none d-lg-block d-xl-none"></div>
+    <div class="bs4-xl d-none d-xl-block d-xxl-none"></div>
+    <div class="bs4-xxl d-none d-xxl-block"></div>
+
+</body>
+</html>

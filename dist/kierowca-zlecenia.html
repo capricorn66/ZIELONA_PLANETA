@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>WYWOZY SZAMBA - wywozyszamba.pl</title>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+<link href="css/vendor.min.css" rel="stylesheet"><link href="css/style.min.css" rel="stylesheet"></head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar align-items-center">
+
+                <a class="brand" href="#">
+                    <img src="./images/logo.svg" alt="WYWOZY SZAMBA" class="d-none d-sm-block">
+                    <img src="./images/logo-sm.svg" alt="WYWOZY SZAMBA" class="d-sm-none">
+                </a>
+
+                <div class="helpdesk mr-30 ml-auto d-none d-lg-flex">
+                    <div class="helpdesk-body">
+                        <div>Infolinia 645 545 434</div>
+                        <small>Czynna pn-pt, w godz. 9.00-15.00</small>
+                    </div>
+                    <i class="icon-helpdesk"></i>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-rounded btn-lg btn-primary px-10 px-md-30 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Jan356@gmail.com
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Panel zarządzania</a>
+                        <a class="dropdown-item" href="#">Ustawienia konta</a>
+                        <a class="dropdown-item" href="#">Wyloguj się</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="nav-scroll nav-tabs-scroll">
+                <div class="nav-scroll-container">
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="orders-tab" href="" role="tab" aria-controls="orders" aria-selected="true">Zlecenia</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="settlements-tab" href="" role="tab" aria-controls="settlements" aria-selected="false">Rozliczenia</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="settings-tab" href="" role="tab" aria-controls="settings" aria-selected="false">Ustawienia</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+
+                    <div class="pane-filters">
+                        <div class="row justify-content-end">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="communeOrdersSelect">gmina:</label>
+                                    <select class="custom-select" id="communeOrdersSelect">
+                                        <option selected>-wszystkie-</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                                <div class="form-group">
+                                    <label for="localityOrdersSelect">miejscowość:</label>
+                                    <select class="custom-select" id="localityOrdersSelect">
+                                        <option selected>-wszystkie-</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pane-body">
+
+                        <h6 class="font-weight-normal">Gmina Żary</h6>
+
+                        <div class="bordered">
+                            <h4>Sieniawa Żarska</h4>
+                            <table id="tableOrders-1" class="table mb-40 v-middle" data-area="Sieniawa Żarska">
+                                <tr data-head>
+                                    <th>id</th>
+                                    <th class="d-none d-md-table-cell">oferta</th>
+                                    <th class="d-none d-xl-table-cell">adres</th>
+                                    <th class="d-none d-lg-table-cell">kontakt</th>
+                                    <th>termin</th>
+                                    <th class="d-none d-xl-table-cell">uwagi klienta</th>
+                                    <th class="text-center">przyjęte</th>
+                                    <th class="text-center">wykonane</th>
+                                    <th class="d-xl-none"></th>
+                                </tr>
+                                <tr id="00034">
+                                    <td>00034</td>
+                                    <td data-offer class="d-none d-md-table-cell">
+                                        <div class="badge badge-express mr-3">E</div>
+                                        <span class="no-wrap">259zł / 10m&sup2</span>
+                                    </td>
+                                    <td data-address class="d-none d-xl-table-cell">32B</td>
+                                    <td data-contact class="d-none d-lg-table-cell">543 243 432, <small class="gray-400 no-wrap">Paweł Piekarski</small></td>
+                                    <td data-time-limit class="no-wrap">
+                                        <b>22-23</b>
+                                        <span class="gray-600 font-weight-light">.09<span class="date-year">.2020</span></span>
+                                    </td>
+                                    <td class="d-none d-xl-table-cell">
+                                        <a href="" class="truncate-120" role="button" data-toggle="modal" data-target="#partnerOrdersModal" data-info>Szambo jest za domem po prawej stronie przy ogrodzeniu.</a>
+                                    </td>
+                                    <td class="text-center" data-status="accept">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="accept-00034" id="accept-00034" class="custom-control-input" checked>
+                                            <label class="custom-control-label" for="accept-00034"></label>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" data-status="done">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="done-00034" id="done-00034" class="custom-control-input">
+                                            <label class="custom-control-label" for="done-00034"></label>
+                                        </div>
+                                    </td>
+                                    <td data-action class="d-xl-none">
+                                        <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10 ml-n5 ml-sm-0" data-toggle="modal" data-target="#partnerOrdersModal"><i class="icon-chevron-right"></i></button>
+                                    </td>
+                                </tr>
+                                <tr id="00035" data-pending>
+                                    <td>00035</td>
+                                    <td data-offer class="d-none d-md-table-cell">
+                                        <div class="badge badge-standard mr-3">S</div>
+                                        <span class="no-wrap">159zł / 10m&sup2</span>
+                                    </td>
+                                    <td data-address class="d-none d-xl-table-cell">ul. Zamkowa 34A</td>
+                                    <td data-contact class="d-none d-lg-table-cell">543 243 432, <small class="gray-400 no-wrap">Paweł Piekarski</small></td>
+                                    <td data-time-limit class="no-wrap">
+                                        <b>22-25</b>
+                                        <span class="gray-600 font-weight-light">.09<span class="date-year">.2020</span></span>
+                                    </td>
+                                    <td class="d-none d-xl-table-cell">
+                                        <a href="" class="truncate-120" role="button" data-toggle="modal" data-target="#partnerOrdersModal" data-info>Szambo jest za domem po prawej stronie przy ogrodzeniu.</a>
+                                    </td>
+                                    <td class="text-center" data-status="accept">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="accept-00035" id="accept-00035" class="custom-control-input">
+                                            <label class="custom-control-label" for="accept-00035"></label>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" data-status="done">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" disabled name="done-00035" id="done-00035" class="custom-control-input">
+                                            <label class="custom-control-label" for="done-00035"></label>
+                                        </div>
+                                    </td>
+                                    <td data-action class="d-xl-none">
+                                        <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10 ml-n5 ml-sm-0" data-toggle="modal" data-target="#partnerOrdersModal"><i class="icon-chevron-right"></i></button>
+                                    </td>
+                                </tr>
+                                <tr id="00036">
+                                    <td>00036</td>
+                                    <td data-offer class="d-none d-md-table-cell">
+                                        <div class="badge badge-standard mr-3">S</div>
+                                        <span class="no-wrap">159zł / 10m&sup2</span>
+                                    </td>
+                                    <td data-address class="d-none d-xl-table-cell">1C</td>
+                                    <td data-contact class="d-none d-lg-table-cell">712 143 132, <small class="gray-400 no-wrap">Janusz Wróblewski</small></td>
+                                    <td data-time-limit class="no-wrap">
+                                        <b>22-25</b>
+                                        <span class="gray-600 font-weight-light">.09<span class="date-year">.2020</span></span>
+                                    </td>
+                                    <td class="d-none d-xl-table-cell" data-info>-</td>
+                                    <td class="text-center" data-status="accept">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="accept-00035" id="accept-00036" class="custom-control-input" checked>
+                                            <label class="custom-control-label" for="accept-00036"></label>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" data-status="done">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="done-00035" id="done-00036" class="custom-control-input">
+                                            <label class="custom-control-label" for="done-00036"></label>
+                                        </div>
+                                    </td>
+                                    <td data-action class="d-xl-none">
+                                        <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10 ml-n5 ml-sm-0" data-toggle="modal" data-target="#partnerOrdersModal"><i class="icon-chevron-right"></i></button>
+                                    </td>
+                                </tr>
+                                <tr id="00037" data-pending data-upcoming>
+                                    <td>00037</td>
+                                    <td data-offer class="d-none d-md-table-cell">
+                                        <div class="badge badge-standard mr-3">S</div>
+                                        <span class="no-wrap">159zł / 10m&sup2</span>
+                                    </td>
+                                    <td data-address class="d-none d-xl-table-cell">ul. Łąkowa 3</td>
+                                    <td data-contact class="d-none d-lg-table-cell">733 243 412, <small class="gray-400 no-wrap">Paweł Piekarski</small></td>
+                                    <td data-time-limit class="no-wrap">
+                                        <b>22-25</b>
+                                        <span class="gray-600 font-weight-light">.09<span class="date-year">.2020</span></span>
+                                    </td>
+                                    <td class="d-none d-xl-table-cell">
+                                        <a href="" class="truncate-120" role="button" data-toggle="modal" data-target="#partnerOrdersModal" data-info>Szambo jest za domem po prawej stronie przy ogrodzeniu.</a>
+                                    </td>
+                                    <td class="text-center" data-status="accept">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="accept-00035" id="accept-00037" class="custom-control-input">
+                                            <label class="custom-control-label" for="accept-00037"></label>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" data-status="done">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" disabled name="done-00035" id="done-00037" class="custom-control-input">
+                                            <label class="custom-control-label" for="done-00037"></label>
+                                        </div>
+                                    </td>
+                                    <td data-action class="d-xl-none">
+                                        <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10 ml-n5 ml-sm-0" data-toggle="modal" data-target="#partnerOrdersModal"><i class="icon-chevron-right"></i></button>
+                                    </td>
+                                </tr>
+                                <tr id="00038" data-upcoming>
+                                    <td>00038</td>
+                                    <td data-offer class="d-none d-md-table-cell">
+                                        <div class="badge badge-standard mr-3">S</div>
+                                        <span class="no-wrap">159zł / 10m&sup2</span>
+                                    </td>
+                                    <td data-address class="d-none d-xl-table-cell">ul Prosta 23h</td>
+                                    <td data-contact class="d-none d-lg-table-cell">661 232 333, <small class="gray-400 no-wrap">Paweł Piekarski</small></td>
+                                    <td data-time-limit class="no-wrap">
+                                        <b>22-25</b>
+                                        <span class="gray-600 font-weight-light">.09<span class="date-year">.2020</span></span>
+                                    </td>
+                                    <td class="d-none d-xl-table-cell" data-info>-</td>
+                                    <td class="text-center" data-status="accept">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="accept-00035" id="accept-00038" class="custom-control-input" checked>
+                                            <label class="custom-control-label" for="accept-00038"></label>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" data-status="done">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" disabled name="done-00035" id="done-00038" class="custom-control-input">
+                                            <label class="custom-control-label" for="done-00038"></label>
+                                        </div>
+                                    </td>
+                                    <td data-action class="d-xl-none">
+                                        <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10 ml-n5 ml-sm-0" data-toggle="modal" data-target="#partnerOrdersModal"><i class="icon-chevron-right"></i></button>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <h4>Złotnik</h4>
+                            <table id="tableOrders-2" class="table mb-40 v-middle" data-area="Złotnik">
+                                <tr data-head>
+                                    <th>id</th>
+                                    <th class="d-none d-md-table-cell">oferta</th>
+                                    <th class="d-none d-xl-table-cell">adres</th>
+                                    <th class="d-none d-lg-table-cell">kontakt</th>
+                                    <th>termin</th>
+                                    <th class="d-none d-xl-table-cell">uwagi klienta</th>
+                                    <th class="text-center">przyjęte</th>
+                                    <th class="text-center">wykonane</th>
+                                    <th class="d-xl-none"></th>
+                                </tr>
+                                <tr id="00134">
+                                    <td>00134</td>
+                                    <td data-offer class="d-none d-md-table-cell">
+                                        <div class="badge badge-express mr-3">E</div>
+                                        <span class="no-wrap">159zł / 10m&sup2</span>
+                                    </td>
+                                    <td data-address class="d-none d-xl-table-cell">32B</td>
+                                    <td data-contact class="d-none d-lg-table-cell">543 243 432, <small class="gray-400 no-wrap">Paweł Piekarski</small></td>
+                                    <td data-time-limit class="no-wrap">
+                                        <b>22-23</b>
+                                        <span class="gray-600 font-weight-light">.09<span class="date-year">.2020</span></span>
+                                    </td>
+                                    <td class="d-none d-xl-table-cell">
+                                        <a href="" class="truncate-120" role="button" data-toggle="modal" data-target="#partnerOrdersModal" data-info>Szambo jest za domem po prawej stronie przy ogrodzeniu.</a>
+                                    </td>
+                                    <td class="text-center" data-status="accept">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="accept-00034" id="accept-00134" class="custom-control-input" checked>
+                                            <label class="custom-control-label" for="accept-00134"></label>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" data-status="done">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="done-00034" id="done-00134" class="custom-control-input">
+                                            <label class="custom-control-label" for="done-00134"></label>
+                                        </div>
+                                    </td>
+                                    <td data-action class="d-xl-none">
+                                        <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10 ml-n5 ml-sm-0" data-toggle="modal" data-target="#partnerOrdersModal"><i class="icon-chevron-right"></i></button>
+                                    </td>
+                                </tr>
+                                <tr id="00135">
+                                    <td>00135</td>
+                                    <td data-offer class="d-none d-md-table-cell">
+                                        <div class="badge badge-standard mr-3">S</div>
+                                        <span class="no-wrap">159zł / 10m&sup2</span>
+                                    </td>
+                                    <td data-address class="d-none d-xl-table-cell">ul. Zamkowa 34A</td>
+                                    <td data-contact class="d-none d-lg-table-cell">543 243 432, <small class="gray-400 no-wrap">Paweł Piekarski</small></td>
+                                    <td data-time-limit class="no-wrap">
+                                        <b>22-25</b>
+                                        <span class="gray-600 font-weight-light">.09<span class="date-year">.2020</span></span>
+                                    </td>
+                                    <td class="d-none d-xl-table-cell">
+                                        <a href="" class="truncate-120" role="button" data-toggle="modal" data-target="#partnerOrdersModal" data-info>Szambo jest za domem po prawej stronie przy ogrodzeniu.</a>
+                                    </td>
+                                    <td class="text-center" data-status="accept">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="accept-00035" id="accept-00135" class="custom-control-input" checked>
+                                            <label class="custom-control-label" for="accept-00135"></label>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" data-status="done">
+                                        <div class="custom-control custom-checkbox custom-checkbox-in-table">
+                                            <input type="checkbox" name="done-00035" id="done-00135" class="custom-control-input">
+                                            <label class="custom-control-label" for="done-00135"></label>
+                                        </div>
+                                    </td>
+                                    <td data-action class="d-xl-none">
+                                        <button type="button" class="btn btn-link py-0 h-auto pl-5 pr-10 px-sm-10 ml-n5 ml-sm-0" data-toggle="modal" data-target="#partnerOrdersModal"><i class="icon-chevron-right"></i></button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 mb-40 mb-xl-0">
+                    <a class="brand" href="#">
+                        <img src="./images/logo-white.svg" alt="WYWOZY SZAMBA">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-xl-3 mb-40 mb-lg-0">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Współpraca</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Polityka prywatności</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Regulamin</a>
+                        </div>
+                        <div class="col-sm-6 col-lg-12">
+                            <a href="" class="nav-link">Administrator danych osobowych</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-40 mb-md-0">
+                    <h5>Kontakt</h5>
+                    <h6>Zielona Planeta Sp. z o.o. Sp. K.</h6>
+                    <p class="mb-30">ul. Kożuchowska 20 D, 65-364 Zielona Góra</p>
+                    <a href="mailto:bok@papaszambo.pl">E-mail: bok@papaszambo.pl</a>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <h5>Infolinia</h5>
+                    <h6>Czynna pn-pt, w godz. 9.00-15.00</h6>
+                    <div class="phone">645 545 434</div>
+                    <p class="text-muted">Opłaty za połączenia są zgodne z cennikiem oferty, z której korzystasz</p>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
+                &copy; 2020 Zielona Planeta
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="partnerOrdersModal" tabindex="-1" aria-labelledby="partnerOrdersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="partnerOrdersModalLabel">Zlecenia <span data-title-id></span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table" data-order id="">
+                        <tr>
+                            <th class="text-right pt-15">oferta</th>
+                            <td data-offer></td>
+                        </tr>
+                        <tr>
+                            <th class="text-right pt-15">adres</th>
+                            <td data-address></td>
+                        </tr>
+                        <tr>
+                            <th class="text-right pt-15">kontakt</th>
+                            <td data-contact></td>
+                        </tr>
+                        <tr>
+                            <th class="text-right pt-15">termin</th>
+                            <td data-time-limit class="no-wrap"></td>
+                        </tr>
+                        <tr>
+                            <th class="text-right no-wrap pt-15">uwagi klienta</th>
+                            <td data-info></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bs4-xs d-block d-sm-none"></div>
+    <div class="bs4-sm d-none d-sm-block d-md-none"></div>
+    <div class="bs4-md d-none d-md-block d-lg-none"></div>
+    <div class="bs4-lg d-none d-lg-block d-xl-none"></div>
+    <div class="bs4-xl d-none d-xl-block d-xxl-none"></div>
+    <div class="bs4-xxl d-none d-xxl-block"></div>
+
+<script type="text/javascript" src="js/vendor.min.js"></script><script type="text/javascript" src="js/script.min.js"></script><script type="text/javascript" src="js/style.min.js"></script></body>
+</html>

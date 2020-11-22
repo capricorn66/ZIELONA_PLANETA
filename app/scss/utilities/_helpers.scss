@@ -1,0 +1,185 @@
+/* helpers
+*******************************************************************/
+
+@for $i from 5 through 30 {
+    $j: $i * 2;
+    .font-#{$j} {
+        font-size: #{$j}px !important;
+    }
+}
+
+@each $color, $value in $service-colors {
+    .#{$color} {
+        color: $value !important;
+    }
+    .bg-#{$color} {
+        background-color: $value !important;
+    }
+}
+
+
+.white {
+    color: $white;
+}
+
+.black {
+    color: $black;
+}
+
+.gray-100 {
+    color: $gray-100;
+}
+.gray-200 {
+    color: $gray-200;
+}
+.gray-300 {
+    color: $gray-300;
+}
+.gray-400 {
+    color: $gray-400;
+}
+.gray-500 {
+    color: $gray-500;
+}
+.gray-600 {
+    color: $gray-600;
+}
+.gray-700 {
+    color: $gray-700;
+}
+.gray-800 {
+    color: $gray-800;
+}
+.gray-900 {
+    color: $gray-900;
+}
+
+.bg-gray-100 {
+    background-color: $gray-100 !important;
+}
+.bg-gray-200 {
+    background-color: $gray-200 !important;
+}
+.bg-gray-300 {
+    background-color: $gray-300 !important;
+}
+.bg-gray-400 {
+    background-color: $gray-400 !important;
+}
+.bg-gray-500 {
+    background-color: $gray-500 !important;
+}
+.bg-gray-600 {
+    background-color: $gray-600 !important;
+}
+.bg-gray-700 {
+    background-color: $gray-700 !important;
+}
+.bg-gray-800 {
+    background-color: $gray-800 !important;
+}
+.bg-gray-900 {
+    background-color: $gray-900 !important;
+}
+
+@include media-breakpoint-down(md) {
+    .bg-gray-200-md-down {
+        background-color: $gray-200 !important;
+    }
+    .bg-gray-100-md-down {
+        background-color: $gray-100 !important;
+    }
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.bodyLock {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scroll-h {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: -20px !important;
+    padding-bottom: 20px !important;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    > * {
+        white-space: nowrap;
+    }
+}
+
+.row.gutter-xs {
+    margin-left: -5px;
+    margin-right: -5px;
+    > [class^="col-"],
+    > [class^=" col-"] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .row.gutter-sm {
+        margin-left: -10px;
+        margin-right: -10px;
+        > [class^="col-"],
+        > [class^=" col-"] {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .row.gutter-lg {
+        margin-left: -30px;
+        margin-right: -30px;
+
+        > [class^="col-"],
+        > [class^=" col-"] {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.truncate-120 {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+.col-280-md-down {
+    @include media-breakpoint-down(md) {
+        flex: 0 0 280px;
+        max-width: 280px;
+    }
+}
+
+.w-lg-100 {
+    @include media-breakpoint-up(lg) {
+        width: 100%;
+    }
+}
+
+.noUnderline {
+    text-decoration: none !important;
+}

@@ -1,0 +1,88 @@
+/* header
+*******************************************************************/
+
+body {
+    @include media-breakpoint-only(md) {
+        padding-top: 110px;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 130px;
+    }
+}
+
+
+header {
+    @include media-breakpoint-up(md) {
+        position: fixed;
+    }
+    top: 0;
+    z-index: 101;
+    width: 100%;
+    background-color: $white;
+
+    .container {
+        position: relative;
+    }
+
+    body.sm & {
+        box-shadow: 0 0 10px 0 rgba($lightblack, .2);
+    }
+
+    body.sm .navbar {
+        .brand {
+            @include media-breakpoint-up(lg) {
+                //margin: 10px 0;
+            }
+            img {
+                @include media-breakpoint-up(lg) {
+                    //width: 130px;
+                }
+            }
+        }
+    }
+
+    .navbar {
+        padding: .5rem 0;
+        height: 80px;
+        @include media-breakpoint-only(md) {
+            height: 110px;
+        }
+        @include media-breakpoint-up(lg) {
+            height: 130px;
+        }
+
+        .brand img {
+            width: 60px;
+            @include media-breakpoint-only(sm) {
+                width: 160px;
+            }
+            @include media-breakpoint-only(md) {
+                width: 180px;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 200px;
+            }
+        }
+
+        .helpdesk {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+            text-align: right;
+            .helpdesk-body {
+                line-height: 1.1em;
+                padding-right: 15px;
+            }
+            .icon-helpdesk {
+                font-size: 56px;
+            }
+        }
+    }
+
+}
